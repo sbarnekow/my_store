@@ -1,0 +1,70 @@
+Last login: Wed Mar 27 15:26:00 on ttys001
+sbarnekow:~ sarahbarnekow$ irb
+1.9.3-p392 :001 > {1 => 'a', 2 => 'b', 3 => 'c'}
+ => {1=>"a", 2=>"b", 3=>"c"} 
+1.9.3-p392 :002 > {:morning => 'a', :noon => 'b', :night => 'c'}
+ => {:morning=>"a", :noon=>"b", :night=>"c"} 
+1.9.3-p392 :003 > c
+NameError: undefined local variable or method `c' for main:Object
+	from (irb):3
+	from /Users/sarahbarnekow/.rvm/rubies/ruby-1.9.3-p392/bin/irb:16:in `<main>'
+1.9.3-p392 :004 > {Array.new => 'foo'}
+ => {[]=>"foo"} 
+1.9.3-p392 :005 > a = {0 => 'a', 1 => 'b', 2 => 'c'}
+ => {0=>"a", 1=>"b", 2=>"c"} 
+1.9.3-p392 :006 > a{1}
+NoMethodError: undefined method `a' for main:Object
+	from (irb):6
+	from /Users/sarahbarnekow/.rvm/rubies/ruby-1.9.3-p392/bin/irb:16:in `<main>'
+1.9.3-p392 :007 > a[1]
+ => "b" 
+1.9.3-p392 :008 > Array.ancestors
+ => [Array, Enumerable, Object, Kernel, BasicObject] 
+1.9.3-p392 :009 > Hash.ancestors
+ => [Hash, Enumerable, Object, Kernel, BasicObject] 
+1.9.3-p392 :010 > {}.methods
+ => [:rehash, :to_hash, :to_a, :inspect, :to_s, :==, :[], :hash, :eql?, :fetch, :[]=, :store, :default, :default=, :default_proc, :default_proc=, :key, :index, :size, :length, :empty?, :each_value, :each_key, :each_pair, :each, :keys, :values, :values_at, :shift, :delete, :delete_if, :keep_if, :select, :select!, :reject, :reject!, :clear, :invert, :update, :replace, :merge!, :merge, :assoc, :rassoc, :flatten, :include?, :member?, :has_key?, :has_value?, :key?, :value?, :compare_by_identity, :compare_by_identity?, :entries, :sort, :sort_by, :grep, :count, :find, :detect, :find_index, :find_all, :collect, :map, :flat_map, :collect_concat, :inject, :reduce, :partition, :group_by, :first, :all?, :any?, :one?, :none?, :min, :max, :minmax, :min_by, :max_by, :minmax_by, :each_with_index, :reverse_each, :each_entry, :each_slice, :each_cons, :each_with_object, :zip, :take, :take_while, :drop, :drop_while, :cycle, :chunk, :slice_before, :nil?, :===, :=~, :!~, :<=>, :class, :singleton_class, :clone, :dup, :initialize_dup, :initialize_clone, :taint, :tainted?, :untaint, :untrust, :untrusted?, :trust, :freeze, :frozen?, :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, :instance_variables, :instance_variable_get, :instance_variable_set, :instance_variable_defined?, :instance_of?, :kind_of?, :is_a?, :tap, :send, :public_send, :respond_to?, :respond_to_missing?, :extend, :display, :method, :public_method, :define_singleton_method, :object_id, :to_enum, :enum_for, :equal?, :!, :!=, :instance_eval, :instance_exec, :__send__, :__id__] 
+1.9.3-p392 :011 > {:today => Date.today}
+NoMethodError: undefined method `today' for Date:Class
+	from (irb):11
+	from /Users/sarahbarnekow/.rvm/rubies/ruby-1.9.3-p392/bin/irb:16:in `<main>'
+1.9.3-p392 :012 > {:now => Time.today, :slightly_later => Time.now}
+NoMethodError: undefined method `today' for Time:Class
+	from (irb):12
+1.9.3-p392 :015 > {:this_month => March, :last_month => February, :month_before => January}
+NameError: uninitialized constant Marchlightly_later => Time.now}
+ => {:nofrom (irb):15 15:39:03 -0700, :slightly_later=>2013-03-27 15:39:03 -0700} 
+1.9.3-p3from /Users/sarahbarnekow/.rvm/rubies/ruby-1.9.3-p392/bin/irb:16:in `<main>'anuary}
+1.9.3-p392 :016 > 
+1.9.3-p392 :017 >   4
+1.9.3-p392 :018 >   this_month => March, :last_month => February, :month_before 1.9.3-p392 :015 > {:this_month => March, :l1.9.3-p392 :019 >   y, :month_before 1.9.3-p392 :015 > {:this_month => March, :last_month => February, :month_before => Jan1.9.3-p392 :020 >   
+1.9.3-p392 :021 >   
+1.9.3-p392 :022 >   
+1.9.3-p392 :023 >   
+1.9.3-p392 :024 >   
+1.9.3-p392 :025 >   
+1.9.3-p392 :026 >   {:this_month => 'March', :last_month => 'February', :month_before => 'January'}
+ => {:this_month=>"March", :last_month=>"February", :month_before=>"January"} 
+1.9.3-p392 :027 > h[:last_month]
+NameError: undefined local variable or method `h' for main:Object
+	from (irb):27
+	from /Users/sarahbarnekow/.rvm/rubies/ruby-1.9.3-p392/bin/irb:16:in `<main>'
+1.9.3-p392 :028 > h
+NameError: undefined local variable or method `h' for main:Object
+	from (irb):28
+	from /Users/sarahbarnekow/.rvm/rubies/ruby-1.9.3-p392/bin/irb:16:in `<main>'
+1.9.3-p392 :029 > h = {:this_month => 'March', :last_month => 'February', :month_before => 'January'}
+ => {:this_month=>"March", :last_month=>"February", :month_before=>"January"} 
+1.9.3-p392 :030 > h
+ => {:this_month=>"March", :last_month=>"February", :month_before=>"January"} 
+1.9.3-p392 :031 > h.sort_by{|k ,v| v}
+ => [[:last_month, "February"], [:month_before, "January"], [:this_month, "March"]] 
+1.9.3-p392 :032 > Hash[1, 2, 3, 4]
+ => {1=>2, 3=>4} 
+1.9.3-p392 :033 > h.to_a
+ => [[:this_month, "March"], [:last_month, "February"], [:month_before, "January"]] 
+1.9.3-p392 :034 > h.sort_by{|k ,v| k}
+ => [[:last_month, "February"], [:month_before, "January"], [:this_month, "March"]] 
+1.9.3-p392 :035 > h.sort_by{|k ,v| k}.reverse
+ => [[:this_month, "March"], [:month_before, "January"], [:last_month, "February"]] 
+1.9.3-p392 :036 > 
